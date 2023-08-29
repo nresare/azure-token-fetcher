@@ -14,4 +14,5 @@ These are the steps I took to issue tokens with Azure AD with a custom claim
 9. Navigate to "Single Sign-on" then choose Edit under "Attributes & Claims"
 10. Select "Add new claim" and proide your claim name, under "Source attribute" simply type in your value.
 11. Select "Save"
-12. Generate a jwt token by running the attached code
+12. Generate a jwt token by running the attached code, modifying the parameters in the main method to match
+    the identities associated with the Apps and Azure AD tenant you are using.

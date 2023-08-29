@@ -12,10 +12,14 @@ import (
 
 func main() {
 	// the endpoint queried, follows the pattern "https://login.microsoftonline.com/<Tenant ID>"
+	// Tenant ID is a uuid style ID that is available on the overview page when accessing Azure AD
+	// in the azure portal
 	authority := "https://login.microsoftonline.com/1b5955bf-2426-4ced-8412-9fe81bb8bca4"
-	// the client id
+	// the client id. This is the uuid identifier labeled "Application (client) ID" under App registrations
+	// and the app that you associated the Certificate to
 	clientId := "a0a86205-89d9-4f66-80af-9b5c35dd228a"
-	// the target scope to encode as aud into the requested token
+	// this identifier is the uuid of the App associated with the additional JWT claim that you want to add,
+	// Labeled "Application (client) ID" in the App registration for that app
 	scope := "ee7470ec-7849-42ed-85c5-1a22cf1a6774/.default"
 	result, err := fetchToken(
 		authority,
