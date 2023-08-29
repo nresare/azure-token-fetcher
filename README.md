@@ -1,4 +1,4 @@
-## Using a custom claim in the JWT token as principal
+## Generating an JWT token with Azure AD with a custom claim 
 
 These are the steps I took to issue tokens with Azure AD with a custom claim
 1. On https://portal.azure.com navigate to Azure Active Directory
